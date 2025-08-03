@@ -1,0 +1,13 @@
+# SSD16XX display controller configuration options
+
+# Copyright (c) 2018 Phytec Messtechnik GmbH
+# SPDX-License-Identifier: Apache-2.0
+
+config SSD1683DUAL
+	bool "SSD1683 dual compatible display controller driver"
+	default y
+	depends on \
+		DT_HAS_SOLOMON_SSD1683DUAL_ENABLED
+	select MIPI_DBI
+	help
+	  Enable driver for SSD1683 dual compatible controller.

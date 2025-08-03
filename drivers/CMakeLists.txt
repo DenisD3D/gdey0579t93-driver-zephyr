@@ -1,0 +1,1 @@
+add_subdirectory_ifdef(CONFIG_SSD1683DUAL ssd1683dual)
